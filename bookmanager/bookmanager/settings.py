@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'book', # 方案一
-    'book.apps.BookConfig', #方案二
+    # 'book.apps.BookConfig', #方案二
 ]
 
 MIDDLEWARE = [
