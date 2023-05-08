@@ -12,4 +12,11 @@ from django.http import HttpResponse
 
 # 我们希望用户输入http://127.0.0.1:8000/index/进行访问视图函数
 def index(request):
-    return HttpResponse('ok')
+    # return HttpResponse('ok')
+    # request
+    # template_name
+    # context = None
+    context = {
+        'name':"点我有惊喜"
+    }
+    return render(request,template_name='book/index.html',context=context)
